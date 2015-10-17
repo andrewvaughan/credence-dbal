@@ -1,0 +1,36 @@
+{
+    "name"        : "credence-dbal",
+    "description" : "CredenceDBAL SQL database abstraction layer.",
+    "version"     : "0.0.0",
+    
+    "author": {
+        "name" : "Andrew Vaughan",
+        "url"  : "http://andrewvaughan.io"
+    },
+    
+    "license": "MIT",
+    
+    "repository"   : "credence/credence-dbal",
+    "bugs"         : "https://github.com/credence/credence-dbal/issues",
+    "contributors" : "https://github.com/credence/credence-dbal/graphs/contributors",
+    
+    "engines": {
+        "node": "~4.1.2"
+    },
+    
+    "scripts": {
+        "test"  : "gulp test"
+    },
+    
+    "devDependencies": {
+        "browser-sync"      : "2.7.13",
+        "gulp"              : "3.9.0",
+        "gulp-eslint"       : "1.0.0",
+        "gulp-if"           : "1.2.5",
+        "gulp-istanbul"     : "0.10.1",
+        "gulp-jshint"       : "1.11.1",
+        "gulp-load-plugins" : "1.0.0-rc.1",
+        "gulp-mocha"        : "2.1.3",
+        "jshint-stylish"    : "2.0.1"
+    }
+}
