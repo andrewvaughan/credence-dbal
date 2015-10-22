@@ -19,6 +19,8 @@
     
     // ---------------------------------------------------------------------------------------------------------------
     
+    // Use ES6
+    "esnext" : true,
     
     // Prevent bitwise operator usage, which are easy to mess up
     "bitwise" : true,
