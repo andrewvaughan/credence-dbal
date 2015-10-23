@@ -5,3 +5,11 @@ sudo: false
 cache:
     directories:
         - node_modules
+addons:
+    code_climate:
+        repo_token:
+            secure: "mga4mP8pWclHHYSBotTQnyhX8GYmK2hIb6sNu0A3M+QXUJgFxEqJLzyaQq6GwqsHdc8yp+tvseCrUrrqi2tiHSicHClVLr12r67l6apdr0pc+sqNAqqD7kqmG+gRCye8rwBn/AhycUbFaCbVBxf8D4Qt+YytNWDCEoKyq2+ZAX+MQUExwIV1m2KjJxA/cE1/YZ4UbWS1i3Cij/lSo1hGKSK017VqfkH/Kp+ExDlynBaEDrebI0WYLEkxM8yhl+oSEtig/Ewb2AGxxoRBsMQj1qoAHO5ZuTtZgdC4tIwBopZ7ScebvzJRTnNNsKwWZo8ptXIQkvWYWb9HwPFm71z+X+2FSdQBs/I18i5aJX62dw09u6d02gRYPNUKQhP4eIga3DFt6log8RcY4PsV1mdurECLa4VarGNB57ijQrL0gRuI7mQNlWUy6bRmjQKykH6FjHJE/+sO+AR7rgjVzXetnuVMLD42ud4fgfQ5Gy7wTwA6kdfpofR66JPrnasdHbIFxH/sDemrDWa8qr1f417XCNhp3EmOJ2NOX9GgD7BQW4PvYZ06t66jsX4xyu5nfd/gowIlkUUMpf4AoM6G2ULgP/2K6qHMUZmRoAVxbRjxkjXdNfBxjdDLDJeOU+FinFDChQnj0/AwDe6q2tq00IsRHWmNfxqQ5/ankEO4pOB/qvE="
+after_script:
+    - npm install codeclimate-test-reporter
+    - gulp coverage
+    - codeclimate-test-reporter < coverage/lcov.info
